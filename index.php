@@ -155,9 +155,10 @@
                 </section>
 
 
-
                 <section id="Contact" class="scroll-point">
                     <h2><span class="bgextend lrextendTrigger"><span class="bgappearTrigger">Contact</span></span></h2>
+
+                    <?php include('./form.php'); ?>
                 </section>
             </main>
         </div><!--/container-->
