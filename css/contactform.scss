@@ -1,0 +1,62 @@
+.contactform{
+    padding: 0 7px;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.alert {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form_contents {
+    color: #464646;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.confirm_form {
+    max-width: 700px;
+    margin: 80px auto 0 auto;
+    padding: 0 5%;
+    text-align: center;
+    .Btn {
+        margin-top: 50px;
+    }
+}
+
+// .form-control {
+//     border: 1px solid #dee2e6;
+//     border-radius: 5px;
+//     width: 100%;
+//     padding: 10px;
+// }
+
+.confirm_form_contents {
+    color: #636363;
+    margin: 20px 0 7px 0;
+    text-align: center;
+}
+
+.C_Btn {
+    text-align: right;
+}
+
+.Btn {
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #3F9EB4;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.form_conclusion {
+    text-align: center;
+    margin: 80px 0 30px 0;
+}

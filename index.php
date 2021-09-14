@@ -8,9 +8,12 @@
     <meta name="description"  content="有限会社NSPは店舗経営コンサルタントとして物件リサーチから日々の経理業務まで店舗に関する経営をトータルサポートします。まずはお気軽にお問い合わせください">
     <meta name="robots" content="noindex,nofollow"><meta name="keywords"  content="店舗,経営,コンサルタント,コンサル,物件リサーチ,経理業務">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/parts.css">
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/contactform.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
 <body>
     <div id="splash">
         <div id="splash-logo">
@@ -155,13 +158,16 @@
                 </section>
 
 
-                <section id="Contact" class="scroll-point">
-                    <h2><span class="bgextend lrextendTrigger"><span class="bgappearTrigger">Contact</span></span></h2>
+                <!-- <section id="Contact" class="scroll-point">
+                    <h2><span class="bgextend lrextendTrigger"><span class="bgappearTrigger">Contact</span></span></h2> -->
 
-                    <?php include('./form.php'); ?>
-                </section>
+                    <?php include('./contactform.php'); ?>
+                <!-- </section> -->
             </main>
         </div><!--/container-->
+        <footer id="footer">
+            <p class="footerContents">Copyright © by NSP Co., Ltd.　All rights reserved.</p>
+        </footer>
     </div><!--/wrapper-->
 </body>
 </html>
