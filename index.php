@@ -45,7 +45,10 @@
                     <span class="bgappearTrigger">店舗経営コンサルタント</span>
                 </span><br>
                 <span class="bgtend lrextendTrigger">
-                    <span class="bgappearTrigger">物件リサーチから日々の経理業務まで<br>店舗に関する経営をトータルサポート</span>
+                    <span class="bgappearTrigger subtitle">  物件リサーチから日々の経理業務まで</span>
+                </span><br>
+                <span class="bgtend lrextendTrigger">
+                    <span class="bgappearTrigger subtitle">店舗に関する経営をトータルサポート</span>
                 </span>
             </p>
             <!--/top-main-->
