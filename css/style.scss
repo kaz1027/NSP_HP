@@ -31,14 +31,129 @@ ul{
     list-style: none;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 #top-main:before {
     content: '';
     position: fixed;
     top: 10vh;
     left: 5%;
-    z-index: -1;
+    z-index: -200;
     width: 90%;
     height: 80vh;
     background: url(../img/top_img/top_img_bill.jpg) no-repeat center;
     background-size: cover;
 }
+
+#top-main {
+    // position: sticky;
+    // top: 70px;
+    min-height: 100vh;
+}
+
+#header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAE8E4;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    line-height: 1;
+    letter-spacing: 0.2em;
+}
+
+@media screen and (max-width:550px) {
+    h1{
+        font-size:1.2rem;
+        top: 32%;
+    }
+}
+#p-nav span.bgtend::before{
+    background:#333;
+}
+
+#p-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    // 全部大文字にする
+    text-transform: uppercase;
+    margin: 0 0 0 5%;
+    position: absolute;
+    right: 15%;
+    top: 40%;
+    li {
+        margin: 0 10px;
+    }
+    a {
+        padding: 0 10px;
+    }
+}
+
+.bgappear {
+    animation-name: bgextendAnimeSecond;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.top-lead{
+    position: fixed;
+    bottom:20%;
+    left:10%;
+    font-size:2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff;
+    z-index: -100;
+}
+
+
+.top-lead span.bgLRextend::before{
+    background:#333;
+}
+
+@media screen and (max-width:550px) {
+.top-lead{
+    font-size:2.2rem;
+    }
+}
+@media screen and (max-width:380px) {
+.top-lead{
+    font-size:1.8rem;
+    }
+}
+
+
+
+#About{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #EAE8E4;
+    margin:0 0 100px 0;
+}
+
+#About .img {
+    width:40%;
+    min-height: 590px;
+    background:url("../img/about_img.jpg") no-repeat center;
+    background-size: cover;
+}
+
