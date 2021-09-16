@@ -64,16 +64,43 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<title>お問い合わせフォーム</title>
+  <meta charset="utf-8">
+  <title>お問い合わせフォーム</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/contactform.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/contactform.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-    <section id="Contact" class="scroll-point">
-      <h2><span class="bgextend lrextendTrigger"><span class="bgappearTrigger">Contact</span></span></h2>
+  <header id="header">
+    <h1><a href="#">
+      <span class="bgtend lrextendTrigger">
+        <span class="bgapper">NSP</span>
+      </span></a>
+    </h1>
+    <nav id="pc-nav">
+        <ul>
+            <li><a href="#About"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
+            <li><a href="#Service"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
+            <li><a href="#OurWorks"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
+            <li><a href="#Conpany"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Conpany</span></span></a></li>
+            <li><a href="#Contact"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
+        </ul>
+    </nav>
+    <div class="openbtn"><span></span><span>Menu</span><span></span></div>
+    <div id="g-nav">
+      <div id="g-nav-list">
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#OurWorks">OurWorks</a></li>
+            <li><a href="#Conpany">Conpany</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main id="ContactMain">
     <?php if( $mode == 'input' ){ ?>
       <!-- 入力画面 -->
       <?php
@@ -83,7 +110,7 @@
           echo '</div>';
         }
       ?>
-      <div class="contactform">
+      <div class="contactform fadeUpTrigger">
         <form action="./contactform.php" method="post">
           <p class="form_contents">会社名・部署名</p>
           <input type="text"    name="company" value="<?php echo $_SESSION['company'] ?>" class="form-control"><br>
@@ -93,12 +120,16 @@
           <input type="email"   name="email"    value="<?php echo $_SESSION['email'] ?>" class="form-control"><br>
           <p class="form_contents">お問い合わせ内容</p>
           <textarea cols="40" rows="8" name="message" class="form-control"><?php echo $_SESSION['message'] ?></textarea><br>
-          <div class="C_Btn"><input type="submit" name="confirm" value="確　認" class="button"/></div>
+          <div class="C_Btn fadeUpTrigger"><input type="submit" name="confirm" value="確　認" class="btn"/></div>
         </form>
       </div>
     <?php } else if( $mode == 'confirm' ){ ?>
       <!-- 確認画面 -->
-      <div class="confirm_form">
+      <div class="center confirm">
+        <h2><span class="bgextend lrextendTrigger"><span class="bgappearTrigger">confirm</span></span></h2>
+        <p class="subtitle2"><span class="bgextend lrextendTrigger"><span class="bgappearTrigger">送信前確認</span></span></p>
+      </div>
+      <div class="confirm_form fadeUpTrigger">
         <form action="./contactform.php" method="post">
           <p class="confirm_form_contents">会社名・部署名</p>
           <?php echo $_SESSION['company'] ?><br>
@@ -108,20 +139,23 @@
           <?php echo $_SESSION['email'] ?><br>
           <p class="confirm_form_contents">お問い合わせ内容</p>
           <?php echo nl2br($_SESSION['message']) ?><br>
-          <div class="Btn">
-            <input type="submit" name="back" value="戻　る" class="button"/>
-            <input type="submit" name="send" value="送　信" class="button"/>
+          <div class="Btn- fadeUpTrigger">
+            <input type="submit" name="back" value="戻　る" class="btn"/>
+            <input type="submit" name="send" value="送　信" class="btn"/>
           </div>
         </form>
       </div>
     <?php } else { ?>
       <!-- 完了画面 -->
-      <p class="form_conclusion">送信しました。お問い合わせありがとうございました。<br>
-      <div class="Btn">
-              <a href="./index.php" class="button">トップページへ</a>
+      <p class="form_conclusion fadeUpTrigger">送信しました。お問い合わせありがとうございました。<br>
+      <div class="Btn- fadeUpTrigger">
+              <a href="./index.php" class="btn">トップページへ</a>
       </div>
     <?php } ?>
-  </section>
+    
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
 
