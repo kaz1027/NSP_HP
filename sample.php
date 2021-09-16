@@ -1,3 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>1-7 ミニマルな企業サイト</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+<meta name="robots" content="noindex,nofollow"><meta name="keywords"  content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--=============Google Font ===============-->
+<link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<!--機能編 9-4-1 ニュースティッカー-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+<!--自作のCSS-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/move.css">
+<link rel="stylesheet" type="text/css" href="css/sample.css">
+</head>
+
+<body>
+<div id="splash">
+<div id="splash-logo"><div class="bgextend bgLRextend"><span class="bgappear">Happycome</span></div></div>
+<!--/splash--></div>
+<div class="splashbg"></div><!---画面遷移用-->
+
+<div id="wrapper">
+<header id="header">
+<h1><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Happycome</span></span></a></h1>
+    
+<nav id="pc-nav">
+        <ul>
+            <li><a href="#vision"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Vision</span></span></a></li>
+            <li><a href="#service"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
+            <li><a href="#about"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
+            <li><a href="#faq"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Faq</span></span></a></li>
+            <li><a href="#contact"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
+        </ul>
 </nav>   
 </header>
 <div id="top-main">

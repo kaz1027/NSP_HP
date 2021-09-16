@@ -15,7 +15,7 @@ form {
 .form_contents {
   color: #464646;
   margin: 20px 0 0 0;
-  text-align: center;
+  text-align: left;
 }
 
 .confirm_form {
@@ -25,8 +25,25 @@ form {
   text-align: center;
 }
 
-.confirm_form .Btn {
-  margin-top: 50px;
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
 .confirm_form_contents {
@@ -39,20 +56,30 @@ form {
   text-align: right;
 }
 
-.Btn {
-  text-align: center;
-}
-
-.button {
-  display: inline-block;
-  padding: 15px 50px;
-  background-color: #3F9EB4;
-  margin: 10px 0;
-  border-radius: 4px;
-}
-
 .form_conclusion {
   text-align: center;
-  margin: 80px 0 30px 0;
+  margin: 200px 0 30px 0;
+}
+
+#Contact {
+  margin-top: 100px;
+}
+
+#ContactMain {
+  margin-top: 100px;
+}
+
+.confirm {
+  margin-top: 200px;
+}
+
+.Btn- {
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
 }
 /*# sourceMappingURL=contactform.css.map */
