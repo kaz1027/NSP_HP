@@ -42,7 +42,7 @@ $('#pc-nav a,#g-nav a').click(function () {
 	var elmHash = $(this).attr('href'); //hrefの内容を取得
 	var headerH = $("#header").outerHeight(true);//追従するheader分の高さ（70px）を引く
 	var pos = Math.round($(elmHash).offset().top-headerH);	//headerの高さを引き小数点を四捨五入
-	$('body,html').animate({scrollTop: pos}, 500);//取得した位置にスクロール※数値が大きいほどゆっくりスクロール
+	$('body,html').animate({scrollTop: pos}, 100);//取得した位置にスクロール※数値が大きいほどゆっくりスクロール
 	return false;//リンクの無効化
 });
 
@@ -95,7 +95,7 @@ function PageTopAnime() {
 $('#page-top').click(function () {
     $('body,html').animate({
         scrollTop: 0//ページトップまでスクロール
-    }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    }, 100);//ページトップスクロールの速さ。数字が大きいほど遅くなる
     return false;//リンク自体の無効化
 });
 

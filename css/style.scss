@@ -10,6 +10,12 @@ body {
     -webkit-text-size-adjust: 100%; 
     word-wrap: break-word;
     background-color: #EAE8E4;
+    font-weight: normal;
+    
+}
+
+#container {
+    background-color: #EAE8E4;
 }
 
 @media screen and (max-width:768px) {
@@ -76,7 +82,7 @@ h2{
     position: fixed;
     height: 100px;
     width: 100%;
-    z-index: 9;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +98,7 @@ h2{
     }
 }
 #pc-nav span.bgtend::before{
-    background:#333;
+    background: #00293C;
 }
 
 #pc-nav ul {
@@ -175,7 +181,7 @@ h2{
 }
 
 #g-nav li a{
-	color: #333;
+	color: #00293C;
 	text-decoration: none;
 	padding:10px;
 	display: block;
@@ -190,13 +196,13 @@ h2{
 
 .openbtn{
 	position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
+    z-index: 99991;/*ボタンを最前面に*/
 	top:0;
 	right: 0;
 	cursor: pointer;
     width: 80px;
     height:70px;
-    border-left:2px solid #333;
+    border-left:2px solid #00293C;
 }
 	
 /*ボタン内側*/
@@ -209,7 +215,7 @@ h2{
 .openbtn span:nth-of-type(1),
 .openbtn span:nth-of-type(3) {
     height: 2px;
-	background: #333;
+	background: #00293C;
     width:30%;
     opacity: 0;
     top:22px;
@@ -220,7 +226,7 @@ h2{
 	top:22px;
 	left:18px;
 	text-transform: uppercase;
-	color: #333;
+	color: #00293C;
     font-size: 0.9rem;
 }
 
@@ -260,6 +266,13 @@ h2{
 }
 
 
+@media screen and (min-width:980px) {
+    // 画面サイズが◯◯px以上に適用
+    .openbtn{
+        display: none;
+        }
+    }
+
 /* main-area */
 
 .main-area{
@@ -267,6 +280,14 @@ h2{
     margin:0 auto;
     padding: 50px 0; 
 }
+
+.SubPage {
+    margin: 0 auto;
+    width: 90%;
+    padding: 200px 0 50px 0;
+    text-align: center;
+}
+
 
 .bgappear {
     animation-name: bgextendAnimeSecond;
@@ -285,21 +306,24 @@ h2{
     font-weight: bold;
     line-height: 1.5;
     color: #fff;
+
+    .sub {
+        font-size: 1.5rem;
+    }
 }
 
 
+
 span .bgLRextend::before{
-    background:#333;
+    background: #00293C;
 }
 
 @media screen and (max-width:550px) {
 .top-lead{
-    font-size:2.2rem;
+    font-size: 1.5rem;
+    .sub {
+        font-size: 1rem;
     }
-}
-@media screen and (max-width:380px) {
-.top-lead{
-    font-size:1.8rem;
     }
 }
 
@@ -343,9 +367,14 @@ span .bgLRextend::before{
 
 #About .img{
     width:42%;
+    margin-top: 50px;
+}
+
+#About .img img{
+    width: 100%;
+
+    object-fit: cover;
     min-height: 590px;
-    background:url("../img/about_img.jpg") no-repeat center;
-    background-size: cover;
 }
 
 
@@ -354,11 +383,32 @@ span .bgLRextend::before{
         text-align: right;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 980px) {
+    #About .about_content{
+        display: flex;
+        flex-direction: column;
+        .content {
+            width: 100%;
+            text-align: center;
+            h2 {
+                padding: 0 7px;
+            }
+            .subtitleAbout {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
     #About .img{
         width:100%;
         min-height: 290px;
             margin:0 0 50px 0;
+        
+        img {
+        height: 350px;
+        }
     }
 }
 
@@ -397,7 +447,7 @@ span .bgLRextend::before{
 
 
 .about-leads span.bgextend::before{
-    background:#333;
+    background:#00293C;
 }
 
 // 後で調整
@@ -447,13 +497,15 @@ h2{
 .service-area {
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    font-family: "游ゴシック体";
     .service-contents {
         background-color: #fff;
         width: 330px;
         height: 360px;
-        margin: 0 10px;
+        margin: 10px;
         text-align: center;
         padding: 0 20px 10px 20px;
         box-shadow: 0 0 20px rgb(177, 177, 177);
@@ -487,14 +539,24 @@ h2{
     color: #000;
 }
 
-.icon-2:before  {
-    // ローラー
-    font-family: 'Material Icons';
-    content: '\e9b4';
-    font-size: 80px;
+
+.icon-4:before  {
+    // PR
     text-align: center;
     color: #000;
 }
+
+.icon-PR {
+    height: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80px;
+        line-height: 290px;
+    }
+}
+
 
 .icon-3:before  {
     // desktop
@@ -504,6 +566,34 @@ h2{
     text-align: center;
     color: #000;
 }
+
+.icon-2:before  {
+    // ローラー
+    font-family: 'Material Icons';
+    content: '\e9b4';
+    font-size: 80px;
+    text-align: center;
+    color: #000;
+}
+
+.icon-5:before  {
+    // desktop
+    font-family: 'Material Icons';
+    content: '\e501';
+    font-size: 80px;
+    text-align: center;
+    color: #000;
+}
+
+.icon-6:before  {
+    // desktop
+    font-family: 'Material Icons';
+    content: '\f009';
+    font-size: 80px;
+    text-align: center;
+    color: #000;
+}
+
 
 .btn {
     margin: 50px 0;
@@ -529,16 +619,22 @@ h2{
 .works-contents {
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    flex-wrap: wrap;
     .workImg {
         width: 330px;
         height: 330px;
-        margin: 0 10px;
+        margin: 10px;
         object-fit: cover;
         box-shadow: 0 0 20px rgb(177, 177, 177);
+        float: left;
     }
 }
+
+// .grid{
+//     display: grid;
+//     gap: 10px;
+//     grid-template-columns: repeat(auto-fit, 3fr);
+// }
 
 #Conpany {
     background-color: #fff;
@@ -608,4 +704,8 @@ h2{
 
 .center {
     text-align: center;
+}
+
+dd {
+    font-family: "游ゴシック体"
 }

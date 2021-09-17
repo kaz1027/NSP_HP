@@ -26,7 +26,7 @@
 
 <div id="wrapper">
 <header id="header">
-<h1><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Happycome</span></span></a></h1>
+<h1><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">NSP Co.,Ltd.</span></span></a></h1>
     
 <nav id="pc-nav">
         <ul>
@@ -58,7 +58,9 @@
             <main>
                 <section id="About" class="scroll-point title-center">
                     <div class="about_content">
-                        <div class="img flipLeftTrigger"></div>
+                        <div class="img flipLeftTrigger">
+                            <img src="./img/about_img.jpg" alt="アバウトイメージ" class="flipLeftTrigger">
+                        </div>
                         <div class="content flipLeftTrigger">
                             <div class="right">
                                 <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span>
@@ -81,24 +83,24 @@
                         </div>
                     </div>
                 </section>
-                <section id="Service" class="scroll-point main-area flipLeftTrigger">
+                <section id="Service" class="scroll-point main-area">
                     <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></h2>
                     <p class="subtitle"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">サービス</span></span></p>
-                    <div class="service-area fadeUpTrigger">
-                        <div class="service-contents ">
+                    <div class="service-area">
+                        <div class="service-contents flipLeftTrigger">
                             <div class="icon-1"></div>
                             <h3>店舗経営コンサルタント</h3>
                             <p>
                                 将来の営業戦略に応じた移転計画策定・物件選定・契約実行まで、きめ細やかなコンサルティングでサポートいたします。
                             </p>
                         </div>
-                        <div class="service-contents">
+                        <div class="service-contents flipLeftTrigger">
                             <div class="icon-2"></div>
                             <h3>総合店舗プロデュース</h3>
                             <p>素材選びから施工方法を含め、予算の中でお店の雰囲気作りやイメージの実現。
                                 立地、客層、客単価などのマーケティングデータに基づいて、課題を解決するための店舗デザインを考えていきます。</p>
                         </div>
-                        <div class="service-contents">
+                        <div class="service-contents flipLeftTrigger">
                             <div class="icon-3"></div>
                             <h3>デザイン</h3>
                             <p>
@@ -106,24 +108,30 @@
                             </p>
                         </div>
                     </div>
-                    <div class="btn fadeUpTrigger"><a href="#">もっと見る</a></div>
+                    <div class="btn fadeUpTrigger"><a href="./service/service.php">もっと見る</a></div>
                 </section>
 
                 <section id="OurWorks" class="scroll-point main-area title-center">
                     <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Our Works</span></span></h2>
                     <p class="subtitle"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">制作実績</span></span></p>
-                    <div class="works-area fadeUpTrigger">
+                    <div class="works-area">
                         <div class="works-contents">
-                            <img src="./img/work_img/HPw1.jpg" alt="NSP コンサル コンテンツ 写真１" class="workImg service-area flipLeft">
-                            <img src="./img/work_img/HPw2.jpg" alt="NSP コンサル コンテンツ 写真２" class="workImg service-area flipLeft">
-                            <img src="./img/work_img/HPw3.jpg" alt="NSP コンサル コンテンツ 写真３" class="workImg service-area flipLeft">
+                            <div class="grid">
+                                <img src="./img/work_img/HPw1.jpg" alt="NSP コンサル コンテンツ 写真１" class="workImg flipLeftTrigger">
+                            </div>
+                            <div class="grid">
+                                <img src="./img/work_img/HPw2.jpg" alt="NSP コンサル コンテンツ 写真２" class="workImg flipLeftTrigger">
+                            </div>
+                            <div class="grid">
+                                <img src="./img/work_img/HPw3.jpg" alt="NSP コンサル コンテンツ 写真３" class="workImg flipLeftTrigger">
+                            </div>
                         </div>
-                        <div class="btn fadeUpTrigger"><a href="#">もっと見る</a></div>
+                        <div class="btn fadeUpTrigger"><a href="./works/works.php">もっと見る</a></div>
                     </div>
                 </section>
                 <section id="Conpany" class="scroll-point">
                     <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Conpany</span></span></h2>
-                    <p class="subtitle2"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">制作実績</span></span></p>
+                    <p class="subtitle2"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">会社概要</span></span></p>
                     <ul class="conpanyList fadeUpTrigger">
                         <li>
                             <dl>
