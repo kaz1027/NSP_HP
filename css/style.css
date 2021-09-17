@@ -9,6 +9,11 @@ body {
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
   background-color: #EAE8E4;
+  font-weight: normal;
+}
+
+#container {
+  background-color: #EAE8E4;
 }
 
 @media screen and (max-width: 768px) {
@@ -75,7 +80,7 @@ h2 {
   position: fixed;
   height: 100px;
   width: 100%;
-  z-index: 9;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +102,7 @@ h2 {
 }
 
 #pc-nav span.bgtend::before {
-  background: #333;
+  background: #00293C;
 }
 
 #pc-nav ul {
@@ -188,7 +193,7 @@ h2 {
 }
 
 #g-nav li a {
-  color: #333;
+  color: #00293C;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -201,14 +206,14 @@ h2 {
 /*===========================================================*/
 .openbtn {
   position: fixed;
-  z-index: 9999;
+  z-index: 99991;
   /*ボタンを最前面に*/
   top: 0;
   right: 0;
   cursor: pointer;
   width: 80px;
   height: 70px;
-  border-left: 2px solid #333;
+  border-left: 2px solid #00293C;
 }
 
 /*ボタン内側*/
@@ -223,7 +228,7 @@ h2 {
 .openbtn span:nth-of-type(1),
 .openbtn span:nth-of-type(3) {
   height: 2px;
-  background: #333;
+  background: #00293C;
   width: 30%;
   opacity: 0;
   top: 22px;
@@ -234,7 +239,7 @@ h2 {
   top: 22px;
   left: 18px;
   text-transform: uppercase;
-  color: #333;
+  color: #00293C;
   font-size: 0.9rem;
 }
 
@@ -272,11 +277,24 @@ h2 {
           transform: translateY(-6px) rotate(45deg);
 }
 
+@media screen and (min-width: 980px) {
+  .openbtn {
+    display: none;
+  }
+}
+
 /* main-area */
 .main-area {
   width: 90%;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+.SubPage {
+  margin: 0 auto;
+  width: 90%;
+  padding: 200px 0 50px 0;
+  text-align: center;
 }
 
 .bgappear {
@@ -302,19 +320,20 @@ h2 {
   color: #fff;
 }
 
+.top-lead .sub {
+  font-size: 1.5rem;
+}
+
 span .bgLRextend::before {
-  background: #333;
+  background: #00293C;
 }
 
 @media screen and (max-width: 550px) {
   .top-lead {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
-}
-
-@media screen and (max-width: 380px) {
-  .top-lead {
-    font-size: 1.8rem;
+  .top-lead .sub {
+    font-size: 1rem;
   }
 }
 
@@ -364,9 +383,14 @@ span .bgLRextend::before {
 
 #About .img {
   width: 42%;
+  margin-top: 50px;
+}
+
+#About .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-height: 590px;
-  background: url("../img/about_img.jpg") no-repeat center;
-  background-size: cover;
 }
 
 #About .content {
@@ -374,11 +398,36 @@ span .bgLRextend::before {
   text-align: right;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
+  #About .about_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #About .about_content .content {
+    width: 100%;
+    text-align: center;
+  }
+  #About .about_content .content h2 {
+    padding: 0 7px;
+  }
+  #About .about_content .content .subtitleAbout {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 980px) {
   #About .img {
     width: 100%;
     min-height: 290px;
     margin: 0 0 50px 0;
+  }
+  #About .img img {
+    height: 350px;
   }
 }
 
@@ -401,7 +450,7 @@ span .bgLRextend::before {
 }
 
 .about-leads span.bgextend::before {
-  background: #333;
+  background: #00293C;
 }
 
 #Service {
@@ -440,16 +489,18 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1100px;
+  font-family: "游ゴシック体";
 }
 
 .service-area .service-contents {
   background-color: #fff;
   width: 330px;
   height: 360px;
-  margin: 0 10px;
+  margin: 10px;
   text-align: center;
   padding: 0 20px 10px 20px;
   -webkit-box-shadow: 0 0 20px #b1b1b1;
@@ -482,6 +533,37 @@ h2 {
   color: #000;
 }
 
+.icon-4:before {
+  text-align: center;
+  color: #000;
+}
+
+.icon-PR {
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-PR img {
+  width: 80px;
+  line-height: 290px;
+}
+
+.icon-3:before {
+  font-family: 'Material Icons';
+  content: '\e30c';
+  font-size: 80px;
+  text-align: center;
+  color: #000;
+}
+
 .icon-2:before {
   font-family: 'Material Icons';
   content: '\e9b4';
@@ -490,9 +572,17 @@ h2 {
   color: #000;
 }
 
-.icon-3:before {
+.icon-5:before {
   font-family: 'Material Icons';
-  content: '\e30c';
+  content: '\e501';
+  font-size: 80px;
+  text-align: center;
+  color: #000;
+}
+
+.icon-6:before {
+  font-family: 'Material Icons';
+  content: '\f009';
   font-size: 80px;
   text-align: center;
   color: #000;
@@ -526,19 +616,19 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .works-contents .workImg {
   width: 330px;
   height: 330px;
-  margin: 0 10px;
+  margin: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 0 0 20px #b1b1b1;
           box-shadow: 0 0 20px #b1b1b1;
+  float: left;
 }
 
 #Conpany {
@@ -619,5 +709,9 @@ h2 {
 
 .center {
   text-align: center;
+}
+
+dd {
+  font-family: "游ゴシック体";
 }
 /*# sourceMappingURL=style.css.map */

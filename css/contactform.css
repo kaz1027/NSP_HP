@@ -1,3 +1,300 @@
+@charset "UTF-8";
+body {
+  font-family: "Lato", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  color: #00293C;
+  font-size: 1rem;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  background-color: #EAE8E4;
+  font-weight: normal;
+}
+
+#container {
+  background-color: #EAE8E4;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #00293C;
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#splash-logo {
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #3F9EB4;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+
+h1 a {
+  color: #00293C;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+#header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAE8E4;
+  top: 0;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 1.2rem;
+    top: 32%;
+  }
+}
+
+#pc-nav span.bgtend::before {
+  background: #00293C;
+}
+
+#pc-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  margin: 0 0 0 5%;
+  position: absolute;
+  right: 15%;
+  top: 40%;
+}
+
+#pc-nav ul li {
+  margin: 0 10px;
+}
+
+#pc-nav ul a {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 980px) {
+  #pc-nav {
+    display: none;
+  }
+}
+
+/*===========================================================*/
+/*機能編  5-1-12 クリックしたらナビが下から上に出現 */
+/*===========================================================*/
+#g-nav {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+  bottom: -120%;
+  width: 100%;
+  height: 100vh;
+  /*ナビの高さ*/
+  background: #3F9EB4;
+  /*動き*/
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+@media screen and (min-width: 980px) {
+  #g-nav {
+    display: none;
+  }
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+  bottom: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav #g-nav-list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+#g-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a {
+  color: #00293C;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*===========================================================*/
+/*機能編  5-2-5	MENUが×に */
+/*===========================================================*/
+.openbtn {
+  position: fixed;
+  z-index: 999999;
+  /*ボタンを最前面に*/
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 80px;
+  height: 70px;
+  border-left: 2px solid #00293C;
+}
+
+/*ボタン内側*/
+.openbtn span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  /*アニメーションの設定*/
+  position: absolute;
+}
+
+.openbtn span:nth-of-type(1),
+.openbtn span:nth-of-type(3) {
+  height: 2px;
+  background: #00293C;
+  width: 30%;
+  opacity: 0;
+  top: 22px;
+  left: 20px;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 22px;
+  left: 18px;
+  text-transform: uppercase;
+  color: #00293C;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 550px) {
+  .openbtn span:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 35px;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
+.openbtn.active span:nth-of-type(1),
+.openbtn.active span:nth-of-type(3) {
+  opacity: 1;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 28px;
+  left: 30px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+  top: 40px;
+  left: 30px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+}
+
+@media screen and (min-width: 980px) {
+  .openbtn {
+    display: none;
+  }
+}
+
+.bgappear {
+  -webkit-animation-name: bgextendAnimeSecond;
+          animation-name: bgextendAnimeSecond;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 .contactform {
   padding: 0 7px;
 }
@@ -56,6 +353,27 @@ form {
   text-align: right;
 }
 
+.btn {
+  margin: 50px 0;
+  background-color: #56bcd3;
+  padding: 15px 60px;
+}
+
+.btn a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #15D2DB;
+  color: #00293C;
+}
+
+.btn:hover a:hover {
+  color: #00293C;
+}
+
 .form_conclusion {
   text-align: center;
   margin: 200px 0 30px 0;
@@ -81,5 +399,26 @@ form {
   color: #fff;
   font-weight: bold;
   font-size: 16px;
+}
+
+h2 {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2rem;
+  border-bottom: solid #F5D57E;
+  padding: 0 7px;
+}
+
+.subtitle {
+  font-size: 13px;
+  margin: 0 0 100px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .subtitle {
+    margin: 0 0 50px 0;
+  }
 }
 /*# sourceMappingURL=contactform.css.map */
