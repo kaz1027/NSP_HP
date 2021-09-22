@@ -8,7 +8,7 @@ body {
     -webkit-text-size-adjust: 100%; 
     word-wrap: break-word;
     background-color: #EAE8E4;
-    font-weight: normal;
+    font-weight: bold;
     
 }
 
@@ -53,10 +53,16 @@ h1 {
     text-transform: uppercase;
     font-size: 1.5rem;
     position: absolute;
-    top: 40%;
+    top: 20% !important;
     left: 10%;
-    line-height: 1;
     letter-spacing: 0.2em;
+    font-weight: bold;
+    img {
+        width: 70px;
+    }
+}
+.logo {
+    width: 70px;
 }
 
 
@@ -64,17 +70,20 @@ h1 {
 
 h1 a{
     color:#00293C;
+
 }
 
 h2{
     text-transform: uppercase;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 @media screen and (max-width:768px) {
 
     h2{
         font-size:2rem;
+        font-weight: bold;
     }
 }
 
@@ -95,6 +104,7 @@ h2{
     h1{
         font-size:1.2rem;
         top: 32%;
+        font-weight: bold;
     }
 }
 #pc-nav span.bgtend::before{
@@ -187,6 +197,7 @@ h2{
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+    font-weight: bold;
 	// font-weight: bold;
 }
 
@@ -196,13 +207,16 @@ h2{
 
 .openbtn{
 	position:fixed;
-    z-index: 999999;/*ボタンを最前面に*/
+    z-index: 99999;/*ボタンを最前面に*/
 	top:0;
 	right: 0;
 	cursor: pointer;
     width: 80px;
     height:70px;
     border-left:2px solid #00293C;
+}
+h2 {
+    font-weight: bold;
 }
 	
 /*ボタン内側*/
@@ -416,3 +430,7 @@ h2{
         margin:0 0 50px 0;
         }
     }
+
+.center {
+    text-align: center;
+}

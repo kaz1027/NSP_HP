@@ -26,14 +26,14 @@
 
 <div id="wrapper">
 <header id="header">
-<h1><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">NSP Co.,Ltd.</span></span></a></h1>
+<h1><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><img src="./img/NSP_logo2.png" alt="logo" class="logo"></span></span></a></h1>
     
 <nav id="pc-nav">
         <ul>
             <li><a href="#About"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
-            <li><a href="#Service"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
-            <li><a href="#OurWorks"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
-            <li><a href="#Conpany"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Conpany</span></span></a></li>
+            <li><a href="./service.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
+            <li><a href="./works.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
+            <li><a href="#Company"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Company</span></span></a></li>
             <li><a href="#Contact"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
         </ul>
 </nav>   
@@ -44,7 +44,7 @@
                     <span class="bgappearTrigger">店舗経営コンサルタント</span>
                 </span><br>
                 <span class="bgextend bgLRextendTrigger">
-                    <span class="bgappearTrigger sub">  物件リサーチから日々の経理業務まで</span>
+                    <span class="top-Head bgappearTrigger sub">  物件リサーチから日々の経理業務まで</span>
                 </span><br>
                 <span class="bgextend bgLRextendTrigger">
                     <span class="bgappearTrigger sub">店舗に関する経営をトータルサポート</span>
@@ -108,7 +108,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="btn fadeUpTrigger"><a href="./service/service.php">もっと見る</a></div>
+                    <div class="btn fadeUpTrigger"><a href="./service.php">もっと見る</a></div>
                 </section>
 
                 <section id="OurWorks" class="scroll-point main-area title-center">
@@ -126,13 +126,13 @@
                                 <img src="./img/work_img/HPw3.jpg" alt="NSP コンサル コンテンツ 写真３" class="workImg flipLeftTrigger">
                             </div>
                         </div>
-                        <div class="btn fadeUpTrigger"><a href="./works/works.php">もっと見る</a></div>
+                        <div class="btn fadeUpTrigger"><a href="./works.php">もっと見る</a></div>
                     </div>
                 </section>
-                <section id="Conpany" class="scroll-point">
-                    <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Conpany</span></span></h2>
+                <section id="Company" class="scroll-point">
+                    <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Company</span></span></h2>
                     <p class="subtitle2"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">会社概要</span></span></p>
-                    <ul class="conpanyList fadeUpTrigger">
+                    <ul class="CompanyList fadeUpTrigger">
                         <li>
                             <dl>
                                 <dt>会社名</dt>
@@ -197,18 +197,18 @@
             </main>
         </div><!--/container-->
         <footer id="footer">
-        <div class="openbtn"><span></span><span>Menu</span><span></span></div>
+            <div class="openbtn"><span></span><span>Menu</span><span></span></div>
             <div id="g-nav">
-            <div id="g-nav-list">
-        <ul>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Service">Service</a></li>
-            <li><a href="#OurWorks">OurWorks</a></li>
-            <li><a href="#Conpany">Conpany</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-        </div>
-        </div>
+                <div id="g-nav-list">
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="./works.php">OurWorks</a></li>
+                        <li><a href="#Company">Company</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
             <p class="footerContents">Copyright © by NSP Co., Ltd.　All rights reserved.</p>
         </footer>
     </div><!--/wrapper-->
@@ -218,6 +218,6 @@
     <!--機能編 9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる-->  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
     <!--自作のJS-->   
-    <script src="js/script.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
