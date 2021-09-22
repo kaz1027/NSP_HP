@@ -73,7 +73,7 @@
   <link rel="stylesheet" type="text/css" href="/css/contactform.css">
 </head>
 <body>
-  <header id="header">
+  <!-- <header id="header">
     <h1><a href="./index.php">
       <span class="bgtend lrextendTrigger">
         <span class="bgapper"></span>
@@ -100,7 +100,7 @@
         </ul>
       </div>
     </div>
-  </header>
+  </header> -->
   <main id="ContactMain">
     <?php if( $mode == 'input' ){ ?>
       <!-- 入力画面 -->
