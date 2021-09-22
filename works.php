@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/contactform.css">
-    <link rel="stylesheet" type="text/css" href="../css/parts.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/contactform.css">
+    <link rel="stylesheet" type="text/css" href="./css/parts.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <div id="splash">
 <!-- <div id="splash-logo"><div class="bgextend bgLRextend"><span class="bgappear">Our Service</span></div> -->
@@ -26,14 +26,14 @@
 
 <body>
 <header id="header">
-<h1><a href="../index.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">NSP Co.,Ltd.</span></span></a></h1>
+<h1><a href="./index.php"><img src="./img/NSP_logo2.png" alt="logo" class="logo"></a></h1>
     
 <nav id="pc-nav">
         <ul>
-            <li><a href="../index.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
-            <li><a href="../service/service.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
+            <li><a href="./index.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
+            <li><a href="./service.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
             <li><a href="#"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
-            <li><a href="./index.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Conpany</span></span></a></li>
+            <li><a href="./index.php#Company"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Company</span></span></a></li>
             <li><a href="#Contact"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
         </ul>
 </nav>   
@@ -88,7 +88,7 @@
             <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></h2>
             <p class="subtitle2"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">お問い合わせ</span></span></p>
         </div>
-        <?php include('../contactform.php'); ?>
+        <?php include('./contactform.php'); ?>
     </section>
 </main>
 
@@ -97,10 +97,10 @@
     <div id="g-nav">
     <div id="g-nav-list">
 <ul>
-    <li><a href="../index.php">About</a></li>
-    <li><a href="../service/service.php">Service</a></li>
+    <li><a href="./index.php#About">About</a></li>
+    <li><a href="./service/service.php">Service</a></li>
     <li><a href="#">OurWorks</a></li>
-    <li><a href="../index.php">Conpany</a></li>
+    <li><a href="../index.php#Company">Company</a></li>
     <li><a href="#Contact">Contact</a></li>
 </ul>
 </div>
@@ -114,6 +114,6 @@
     <!--機能編 9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる-->  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
     <!--自作のJS-->   
-    <script src="../js/script.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>

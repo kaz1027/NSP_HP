@@ -60,6 +60,11 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
 
+$(document).on('click', '#g-nav a', function(){
+    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+});
+
 
 /*===========================================================*/
 /*機能編  9-1-5 スクロールをするとエリアの高さに合わせて線が伸びる*/

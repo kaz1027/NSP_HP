@@ -55,20 +55,28 @@ h1 {
     text-transform: uppercase;
     font-size: 1.5rem;
     position: absolute;
-    top: 40%;
+    top: 20% !important;
     left: 10%;
-    line-height: 1;
     letter-spacing: 0.2em;
+    font-weight: bold;
+    img {
+        width: 70px;
+    }
 }
 
+.logo {
+    width: 70px;
+}
 
 h1 a{
     color:#00293C;
+    font-weight: bold;
 }
 
 h2{
     text-transform: uppercase;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 @media screen and (max-width:768px) {
@@ -177,7 +185,7 @@ h2{
 
 #g-nav li{
 	list-style: none;
-    text-align: center; 
+    text-align: center;
 }
 
 #g-nav li a{
@@ -187,91 +195,91 @@ h2{
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	// font-weight: bold;
+    font-weight: 900 !important;
 }
 
 /*===========================================================*/
 /*機能編  5-2-5	MENUが×に */
 /*===========================================================*/
 
-.openbtn{
-	position:fixed;
-    z-index: 99991;/*ボタンを最前面に*/
-	top:0;
-	right: 0;
-	cursor: pointer;
-    width: 80px;
-    height:70px;
-    border-left:2px solid #00293C;
-}
+// .openbtn{
+// 	position:fixed;
+//     z-index: 9999;/*ボタンを最前面に*/
+// 	top:0;
+// 	right: 0;
+// 	cursor: pointer;
+//     width: 80px;
+//     height:70px;
+//     border-left:2px solid #00293C;
+// }
 	
-/*ボタン内側*/
-.openbtn span{
-    display: inline-block;
-    transition: all .4s;/*アニメーションの設定*/
-    position: absolute;
-}
+// /*ボタン内側*/
+// .openbtn span{
+//     display: inline-block;
+//     transition: all .4s;/*アニメーションの設定*/
+//     position: absolute;
+// }
 
-.openbtn span:nth-of-type(1),
-.openbtn span:nth-of-type(3) {
-    height: 2px;
-	background: #00293C;
-    width:30%;
-    opacity: 0;
-    top:22px;
-    left:20px;
-}
+// .openbtn span:nth-of-type(1),
+// .openbtn span:nth-of-type(3) {
+//     height: 2px;
+// 	background: #00293C;
+//     width:30%;
+//     opacity: 0;
+//     top:22px;
+//     left:20px;
+// }
 
-.openbtn span:nth-of-type(2) {
-	top:22px;
-	left:18px;
-	text-transform: uppercase;
-	color: #00293C;
-    font-size: 0.9rem;
-}
+// .openbtn span:nth-of-type(2) {
+// 	top:22px;
+// 	left:18px;
+// 	text-transform: uppercase;
+// 	color: #00293C;
+//     font-size: 0.9rem;
+// }
 
-@media screen and (max-width:550px) {
-.openbtn span:nth-of-type(2) {
-    font-size: 0.8rem;
-    }
+// @media screen and (max-width:550px) {
+// .openbtn span:nth-of-type(2) {
+//     font-size: 0.8rem;
+//     }
     
-}
+// }
 
-.openbtn span:nth-of-type(3) {
-    top:35px;
-}
-
-
-/*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
-
-.openbtn.active span:nth-of-type(1),
-.openbtn.active span:nth-of-type(3) {
-    opacity:1;
-}
-
-.openbtn.active span:nth-of-type(1) {
-    top: 28px;
-    left: 30px;
-    transform: translateY(6px) rotate(-45deg);
-}
-
-.openbtn.active span:nth-of-type(2) {
-	opacity:0;
-}
-
-.openbtn.active span:nth-of-type(3){
-    top: 40px;
-    left: 30px;
-    transform: translateY(-6px) rotate(45deg);
-}
+// .openbtn span:nth-of-type(3) {
+//     top:35px;
+// }
 
 
-@media screen and (min-width:980px) {
-    // 画面サイズが◯◯px以上に適用
-    .openbtn{
-        display: none;
-        }
-    }
+// /*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
+
+// .openbtn.active span:nth-of-type(1),
+// .openbtn.active span:nth-of-type(3) {
+//     opacity:1;
+// }
+
+// .openbtn.active span:nth-of-type(1) {
+//     top: 28px;
+//     left: 30px;
+//     transform: translateY(6px) rotate(-45deg);
+// }
+
+// .openbtn.active span:nth-of-type(2) {
+// 	opacity:0 !important;
+// }
+
+// .openbtn.active span:nth-of-type(3){
+//     top: 40px;
+//     left: 30px;
+//     transform: translateY(-6px) rotate(45deg);
+// }
+
+
+// @media screen and (min-width:980px) {
+//     // 画面サイズが◯◯px以上に適用
+//     .openbtn{
+//         display: none;
+//         }
+//     }
 
 /* main-area */
 
@@ -319,8 +327,15 @@ span .bgLRextend::before{
 }
 
 @media screen and (max-width:550px) {
+.top-main {
+    margin: 0 auto;
+}
 .top-lead{
     font-size: 1.5rem;
+    bottom:40%;
+    text-align: center;
+    
+    
     .sub {
         font-size: 1rem;
     }
@@ -404,7 +419,7 @@ span .bgLRextend::before{
     #About .img{
         width:100%;
         min-height: 290px;
-            margin:0 0 50px 0;
+            margin:100px 0 50px 0;
         
         img {
         height: 350px;
@@ -636,7 +651,7 @@ h2{
 //     grid-template-columns: repeat(auto-fit, 3fr);
 // }
 
-#Conpany {
+#Company {
     background-color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -653,11 +668,11 @@ h2{
     }
 }
 
-#Conpany h2{
+#Company h2{
     text-align: center;
 }
 
-.conpanyList {
+.CompanyList {
     width: 96%;
     max-width: 900px;
     margin: 0 auto;

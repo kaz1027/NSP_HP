@@ -74,29 +74,29 @@
 </head>
 <body>
   <header id="header">
-    <h1><a href="#">
+    <h1><a href="./index.php">
       <span class="bgtend lrextendTrigger">
-        <span class="bgapper">NSP CO.,LTD.</span>
+        <span class="bgapper"></span>
       </span></a>
     </h1>
     <nav id="pc-nav">
         <ul>
-            <li><a href="#About"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
-            <li><a href="#Service"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
-            <li><a href="#OurWorks"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
-            <li><a href="#Conpany"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Conpany</span></span></a></li>
-            <li><a href="#Contact"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
+            <li><a href="./index.php#About"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
+            <li><a href="./index.php#Service"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
+            <li><a href="./index.php#OurWorks"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
+            <li><a href="./index.php#Conpany"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Conpany</span></span></a></li>
+            <li><a href="./index.php#Contact"><span class="bgtend lrextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
         </ul>
     </nav>
     <div class="openbtn"><span></span><span>Menu</span><span></span></div>
     <div id="g-nav">
       <div id="g-nav-list">
         <ul>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Service">Service</a></li>
-            <li><a href="#OurWorks">OurWorks</a></li>
-            <li><a href="#Conpany">Conpany</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="./index.php#About">About</a></li>
+            <li><a href="./index.php#Service">Service</a></li>
+            <li><a href="./index.php#OurWorks">OurWorks</a></li>
+            <li><a href="./index.php#Conpany">Conpany</a></li>
+            <li><a href="./index.php#Contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -156,7 +156,7 @@
     
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="./JS/script.js"></script>
 </body>
 </html>
 
