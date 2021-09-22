@@ -50,6 +50,12 @@ img{
     color: #3F9EB4;
 }
 
+@media (min-width: 550px) {
+    #splash-logo {
+        font-size: 5px;
+    }
+  }
+
 h1 {
     // 大文字表記
     text-transform: uppercase;

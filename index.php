@@ -31,8 +31,8 @@
 <nav id="pc-nav">
         <ul>
             <li><a href="#About"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">About</span></span></a></li>
-            <li><a href="./service.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
-            <li><a href="./works.php"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
+            <li><a href="#Service"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Service</span></span></a></li>
+            <li><a href="#OurWorks"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">OurWorks</span></span></a></li>
             <li><a href="#Company"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Company</span></span></a></li>
             <li><a href="#Contact"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></a></li>
         </ul>
@@ -202,8 +202,8 @@
                 <div id="g-nav-list">
                     <ul>
                         <li><a href="#About">About</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="./works.php">OurWorks</a></li>
+                        <li><a href="#Service">Service</a></li>
+                        <li><a href="#OurWorks">OurWorks</a></li>
                         <li><a href="#Company">Company</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
