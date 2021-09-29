@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSP 店舗経営コンサルタント</title>
     <meta name="description"  content="有限会社NSPは店舗経営コンサルタントとして物件リサーチから日々の経理業務まで店舗に関する経営をトータルサポートします。まずはお気軽にお問い合わせください">
-    <meta name="robots" content="noindex,nofollow"><meta name="keywords"  content="店舗,経営,コンサルタント,コンサル,物件リサーチ,経理業務">
+    <!-- クローラに対してリンクをたどらないよう指示すること -->
+    <!-- <meta name="robots" content="nofollow"> -->
+    <meta name="keywords"  content="店舗,経営,コンサルタント,コンサル,物件リサーチ,経理業務">
     <!--=============Google Font ===============-->
     <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
