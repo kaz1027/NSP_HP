@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NSP サービス一覧</title>
+    <title>有限会社NSP サービス一覧</title>
     <meta name="description"  content="有限会社NSPは店舗経営コンサルタントとして物件リサーチから日々の経理業務まで店舗に関する経営をトータルサポートします。まずはお気軽にお問い合わせください">
     <meta name="keywords"  content="店舗,経営,コンサルタント,コンサル,物件リサーチ,経理業務">
     <!--=============Google Font ===============-->

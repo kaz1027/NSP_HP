@@ -51,6 +51,12 @@ img {
   color: #3F9EB4;
 }
 
+@media (min-width: 550px) {
+  #splash-logo {
+    font-size: 5px;
+  }
+}
+
 h1 {
   text-transform: uppercase;
   font-size: 1.5rem;
